@@ -56,9 +56,9 @@ attr_reader :id
         end
       end
 
-      def update 
-        sql = <<-SQL 
-        UPDATE students SET name = ?, 
+      def update
+        sql = <<-SQL
+        UPDATE students SET name = ?,
         album = ? WHERE id = ?
         SQL
 
