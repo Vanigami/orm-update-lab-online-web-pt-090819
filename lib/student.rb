@@ -40,7 +40,7 @@ attr_reader :id
         end
       end
 
-      def self.create(name:, grade:)
+      def self.create(name, grade)
         student = Students.new(name, grade)
         student.save
       end
