@@ -61,5 +61,6 @@ attr_reader :id
         UPDATE students SET name = ?,
         album = ? WHERE id = ?
         SQL
+        
 
 end
