@@ -28,7 +28,7 @@ attr_reader :id
   end
 
   def save
-    if seld.id 
+    if seld.id
       self.update
     else
       sql = <<-SQL
