@@ -43,7 +43,6 @@ attr_reader :id
       def self.create(name:, grade:)
         student = Students.new(name, grade)
         student.save
-        student
       end
 
       def self.new_from_db(row)
