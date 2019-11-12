@@ -10,4 +10,16 @@ attr_reader :id
     @album = album
   end
 
+  def self.create_table
+    sql = <<-SQL 
+      CREATE TABLE ID NOT EXISTS students
+      (
+        id INTEGER PRIMARY KEY,
+        name TEXT 
+        album TEXT
+      )
+      SQL
+    DB[:conn].execute(sql)
+  end
+    
 end
